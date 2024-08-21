@@ -1,16 +1,22 @@
-name: Continuous Integrations teste
+name: Continuous Delivery teste
 on:
-  pull_request:
+  push:
     branches:
       - main
 jobs:
-  build:
+  deliver:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
 
-      - name: Python Lint Code Scanning Action
-        uses: advanced-security/python-lint-code-scanning-action@v1.1.1
+      - name: simulando continuous delivery
+        uses: actions/upload-artifact@v4
         with:
-          linter: pylint
+          name: arquivoZip.zip
+          path: |
+            '**.py'
+            README.md
+      
+
+
