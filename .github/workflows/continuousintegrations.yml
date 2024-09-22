@@ -15,8 +15,7 @@ jobs:
         with:
           name: arquivoZip.zip
           path: |
-            Main.py
-            Main2.py
+            **.py
             README.md
       
 
