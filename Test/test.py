@@ -1,4 +1,4 @@
-from src.main import *
+from SRC.Main import *
 from unittest.mock import patch
 
 
