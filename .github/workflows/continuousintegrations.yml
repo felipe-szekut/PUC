@@ -2,7 +2,7 @@ name: Continuous Delivery teste
 on:
     - push
 
-testes:
+jobs:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v4
