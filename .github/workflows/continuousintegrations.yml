@@ -1,8 +1,7 @@
 name: Continuous Delivery teste
 on:
   push:
-    branches:
-      - main
+
 testes:
   runs-on: ubuntu-latest
   steps:
