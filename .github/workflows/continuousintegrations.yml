@@ -10,10 +10,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.11'
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install
       - name: Test with pytest
         run: |
           pip install pytest pytest-cov
